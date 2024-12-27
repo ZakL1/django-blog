@@ -27,10 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zakl1-djangoblog-mc1bhtmhvmp.ws.codeinstitute-ide.net',
+ALLOWED_HOSTS = ['8000-zakl1-djangoblog-syj94m1hyhc.ws-eu117.gitpod.io',
                 ".herokuapp.com"]
+
+#ALLOWED_HOSTS = ['8000-zakl1-djangoblog-mc1bhtmhvmp.ws.codeinstitute-ide.net',
+#                ".herokuapp.com"]
 
 
 # Application definition
@@ -91,7 +94,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeinstitute-ide.net",
+    "https://8000-zakl1-djangoblog-syj94m1hyhc.ws-eu117.gitpod.io",
     "https://*.herokuapp.com"
 ]
 
